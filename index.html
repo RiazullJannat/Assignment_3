@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,17 @@
         font-weight: 400;
         font-style: normal;
       }
+
+      .arrow{
+        background-color: #ABEF5F;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
     </style>
 
     <!-- tailwind and daisyUI -->
@@ -39,8 +50,69 @@
     <!-- Font_Awesome -->
     <script src="https://kit.fontawesome.com/750ed5d051.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header></header>
+<body class="manrope">
+    <header class="container mx-auto">
+      <!-- navigation part -->
+       <nav class="py-8 md:py-10">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="arrow mr-1">
+              <i class="fa-solid fa-arrow-right -rotate-45 font-semibold"></i>
+            </div>
+            <a class="text-3xl font-extrabold">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-4">
+            <i class="fa-solid fa-magnifying-glass p-4 rounded-full bg-[#ABEF5F]"></i>
+            <i class="fa-solid fa-cart-shopping p-4 rounded-full bg-[#ABEF5F]"></i>
+            <div class="hidden md:block">
+              <a class="btn bg-[#ABEF5F] rounded-3xl px-5 text-xl font-extrabold">
+                Book Consult 
+                <div class="arrow bg-black text-white"><i class="fa-solid fa-arrow-right -rotate-45 font-semibold"></i></div>
+              </a>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </nav>
+      <!-- banner section -->
+    </header>
     <main></main>
     <footer></footer>
 </body>
