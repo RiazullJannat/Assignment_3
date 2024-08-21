@@ -71,16 +71,16 @@
             </ul>
           </div>
           <div class="navbar-end gap-4">
-            <i class="fa-solid fa-magnifying-glass p-4 rounded-full bg-[#ABEF5F]"></i>
-            <i class="fa-solid fa-cart-shopping p-4 rounded-full bg-[#ABEF5F]"></i>
+            <i class="fa-solid fa-magnifying-glass p-2.5 md:p-2.5 lg:p-3.5 rounded-full bg-[#ABEF5F]"></i>
+            <i class="fa-solid fa-cart-shopping p-2.5 md:p-2.5 lg:p-3.5 rounded-full bg-[#ABEF5F]"></i>
             <div class="hidden md:block">
-              <a class="btn bg-[#ABEF5F] rounded-3xl px-5 text-xl font-extrabold">
+              <a class="btn bg-[#ABEF5F] rounded-3xl md:px-3 lg:px-4 text-xl md:text-[16px] font-extrabold">
                 Book Consult 
                 <div class="arrow bg-black text-white"><i class="fa-solid fa-arrow-right -rotate-45 font-semibold"></i></div>
               </a>
             </div>
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div tabindex="0" role="button" class="bg-[#ABEF5F] rounded-full p-2.5 lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -94,24 +94,27 @@
                     d="M4 6h16M4 12h8m-8 6h16" />
                 </svg>
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
             </div>
           </div>
         </div>
        </nav>
       <!-- banner section -->
+      <div class="hero">
+        <div class="hero-content flex-col ">
+          <img
+            src="assets/banner.png"
+            class="w-full rounded-lg " />
+          <div class="text-center ">
+            <h1 class="text-3xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="py-6 text-[14px] md:text-[16px]">
+              A barn house of this design boasts a striking appearance, blending rustic charm with modern elegance for a truly eye-catching look.
+            </p>
+            <button class="btn bg-[#acef5f91] rounded-3xl ">Get Started <div class="arrow mr-1">
+              <i class="fa-solid fa-arrow-right -rotate-45 font-semibold"></i>
+            </div></button>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
