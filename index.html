@@ -28,6 +28,10 @@
         align-items: center;
       }
 
+      p {
+        color: #494949;
+      }
+
     </style>
 
     <!-- tailwind and daisyUI -->
@@ -51,6 +55,7 @@
     <script src="https://kit.fontawesome.com/750ed5d051.js" crossorigin="anonymous"></script>
 </head>
 <body class="manrope">
+  <!-- Header -->
     <header class="container mx-auto">
       <!-- navigation part -->
        <nav class="py-8 md:py-10">
@@ -109,14 +114,52 @@
             <p class="py-6 text-[14px] md:text-[16px]">
               A barn house of this design boasts a striking appearance, blending rustic charm with modern elegance for a truly eye-catching look.
             </p>
-            <button class="btn bg-[#acef5f91] rounded-3xl ">Get Started <div class="arrow mr-1">
+            <button class="btn bg-[#acef5f91] rounded-3xl w-4/5 md:w-40">Get Started <div class="arrow mr-1">
               <i class="fa-solid fa-arrow-right -rotate-45 font-semibold"></i>
             </div></button>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+      <!-- about Us section -->
+       <section>
+        <div class="hero bg-base-200 ">
+          <div class="hero-content flex-col">
+            <div class="text-center">
+              <button class="btn bg-white rounded-3xl mb-4">
+                <i class="fa-solid fa-arrow-right"></i>
+                Get Started
+              </button>
+              <h1 class="text-2xl  font-bold ">We design thoughtful, liveable spaces</h1>
+              <p class="py-6 text-[14px]">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <div>
+                <div class="flex gap-3 bg-[#FFFFFF]">
+                  <img src="assets/commercial.png" alt="">
+                  <div class="text-left">
+                    <h2 class="font-extrabold flex flex-col">Commercial</h2>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+                <div class="flex gap-3 bg-[#FFFFFF]">
+                  <img src="assets/residential.png" alt="">
+                  <div class="text-left">
+                    <h2 class="font-extrabold">Residential</h2>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="assets/Rectangle.png"
+              class="max-w-sm rounded-lg shadow-2xl" />
+          </div>
+        </div>
+       </section>
+    </main>
     <footer></footer>
 </body>
 </html>
